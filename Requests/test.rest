@@ -1,0 +1,14 @@
+###
+POST http://localhost:3001/api/persons/ HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Art Hellas",
+    "number": "19"
+}
+
+###
+DELETE http://localhost:3001/api/persons/4691 HTTP/1.1
+
+###
+GET http://localhost:3001/api/persons/ HTTP/1.1
