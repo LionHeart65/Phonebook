@@ -1,5 +1,8 @@
 const mongoose = require('mongoose')
 require('dotenv').config();
+const validator = v => {
+    return /\d{2,3}-\d+/.test(v)
+}
 
 mongoose.set('strictQuery',false)
 
@@ -26,13 +29,8 @@ const personSchema = new mongoose.Schema({
     number: {
         type: String,
         minLength: 8,
-        validate: {
-            validator: () => {
-                return "\d{2,3}-\d+"
-            }
-        },
+        validate: validator,
         required: true
-
     }
 })
   
