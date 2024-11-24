@@ -1,4 +1,18 @@
 ###
+POST http://phonebook-3bh2.onrender.com/api/persons/ HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Art Hellas",
+    "number": "19"
+}
+
+###
+DELETE http://phonebook-3bh2.onrender.com/api/persons/9067 HTTP/1.1
+
+###
+GET http://phonebook-3bh2.onrender.com/api/persons/ HTTP/1.1
+###
 POST http://localhost:3001/api/persons/ HTTP/1.1
 content-type: application/json
 
@@ -8,7 +22,10 @@ content-type: application/json
 }
 
 ###
-DELETE http://localhost:3001/api/persons/4691 HTTP/1.1
+DELETE http://localhost:3001/api/persons/674398491861e14e87351791 HTTP/1.1
 
 ###
 GET http://localhost:3001/api/persons/ HTTP/1.1
+
+###
+PUT http://localhost:3001/api/persons/ HTTP/1.1
