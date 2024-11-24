@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 require('dotenv').config();
 const validator = v => {
-    return /\d{2,3}-\d+/.test(v)
+    return /^\d{2,3}-\d+/.test(v)
 }
 
 mongoose.set('strictQuery',false)
